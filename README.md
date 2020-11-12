@@ -133,4 +133,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 [license-url]: https://github.com/FalseG0d/PythonPaint/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/apoorv-garg-137137171/
-[product-screenshot]: images/pexels.jpeg
+[product-screenshot]: images/pexels.jpg
