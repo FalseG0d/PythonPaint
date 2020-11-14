@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import colorchooser,filedialog,messagebox
 from tkinter.ttk import Scale
-from PIL.ImageGrab as ImageGrab
+import PIL.ImageGrab as ImageGrab
 
 
 class Paint():
@@ -36,7 +36,7 @@ class Paint():
         self.clear_button.place(x=0,y=217)
         
 
-        self.save_button=Button(self.root,text="SAVE",bd=4,bg='white',command=self.save,width=8,relief=RIDGE)
+        self.save_button=Button(self.root,text="SAVE",bd=4,bg='white',command=self.save_paint,width=8,relief=RIDGE)
         self.save_button.place(x=0,y=247)
         
 
@@ -80,25 +80,22 @@ class Paint():
         color=colorchooser.askcolor()
         self.pen_color=color[1]
 
-    def save(self):
+    def save_paint(self):
         try:
-            filename=asksaveasfilename(defaultextension='.jpg')
+            self.canvas.update()
+            filename=filedialog.asksaveasfilename(defaultextension='.jpg')
             
             x=self.root.winfo_rootx()+self.canvas.winfo_x()
             y=self.root.winfo_rooty()+self.canvas.winfo_y()
 
             x1=x+self.canvas.winfo_width()
-            y1=y+self.canvas.winfo_width()
+            y1=y+self.canvas.winfo_height()
 
             ImageGrab.grab().crop((x,y,x1,y1)).save(filename)
             messagebox.showinfo('Paint Says ','Image Is Saved As '+str(filename))
 
         except:
             messagebox.showinfo('Paint Says ','Something Went Wrong, Cannot Save File')
-
-
-
-
 
 
 if __name__=="__main__":
