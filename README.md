@@ -18,7 +18,7 @@
   <h3 align="center">Made By FalseG0d</h3>
 
   <p align="center">
-    Simple PyQt5 Implementation Of The Classic Paint Program to Reverse Enginer and understand the various graphics algorithms.
+    Simple Tkinter Implementation Of The Classic Paint Program to Reverse Enginer and understand the various graphics algorithms.
     <br />
     <a href="https://github.com/FalseG0d?tab=repositories"><strong>Explore Other Projects »</strong></a>
     <br />
@@ -78,7 +78,7 @@ python index.py
 ## Built With
 
 * [Python](https://www.python.org/)- Programing Language
-* [PyQt5](https://pypi.org/project/PyQt5/) - Front End Library Library
+* [Tkinter](#) - Front End Library Library
 
 ## Contributing
 
