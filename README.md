@@ -64,7 +64,7 @@ pip install -r requirements.txt
 3. Run index.py file.
 
 ```sh
-python index.py
+python paint.py
 ```
 
 
